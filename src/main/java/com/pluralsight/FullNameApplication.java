@@ -15,6 +15,13 @@ public class FullNameApplication {
         System.out.println("Enter your suffix:\n\t(If none, leave blank)");
         String suffix = myScanner.nextLine();
 
+       if (middleName.isEmpty() == true) {
+           System.out.println(firstName.trim() + " " + lastName.trim());
+       }
+       else if (suffix.isEmpty()== true) {
+               System.out.println(firstName.trim() + " " + middleName.trim() + " " + lastName.trim());
+       }else{
         System.out.println(firstName.trim()+ " " + middleName.trim()+ " " + lastName.trim()+ ", " + suffix.trim());
+        }
     }
 }
